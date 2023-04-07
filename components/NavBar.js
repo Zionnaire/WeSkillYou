@@ -39,7 +39,7 @@ function NavBar() {
                 <Nav className={`justify-content-end flex-grow-1 pe-3 ${styles.navLink}`}>
                   <Nav.Link href="#action1" className={styles.navs}><Link href="/">Home</Link></Nav.Link>
                   <Nav.Link href="#action2" className={styles.navs}><Link href="/about">About Us</Link></Nav.Link>
-                  <Nav.Link href="#action2" className={styles.navs}><Link href="/signin">Login</Link></Nav.Link>
+                  <Nav.Link href="#action2" className={styles.navs}><Link href="/login">Login</Link></Nav.Link>
                   <NavDropdown
                     title="Signup"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
