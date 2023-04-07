@@ -1,0 +1,52 @@
+@media screen and (min-width: 700px) {
+    .navControl{
+        display: none;
+    }
+    .side{
+        display: flex;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .navControl{
+        display: block;
+        width: 100%;
+    }
+
+    /* .side{
+        display: none;
+    } */
+}
+
+
+.divide{
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ width: 100%;
+}
+
+.divide1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.divide2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.side{
+    width: 0%;
+}
+
+.popular{
+  
+    /* width: 70%; */
+}
+

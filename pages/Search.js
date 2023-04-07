@@ -14,7 +14,7 @@ export default function Search () {
         <section className={styles.sect1}>
             <div className={styles.sect2}>
                 <div className={styles.sect3}>
-                <Form className={`d-flex ${styles.dflex}`}>
+                <Form className={`'d-flex' ${styles.dflex}`}>
                   <Form.Control
                     type="search"
                     placeholder="Search Course"
@@ -49,7 +49,8 @@ export default function Search () {
                 <div className={styles.sect23}>
                     <h5>Courses</h5>
                     <div className={styles.courseImg}>
-                        <div className={styles.eachImg}>
+                       <div className={styles.allCourse}>
+                       <div className={styles.eachImg}>
                         <img src="/img.png" alt="Aluminium" />
                         <h4>Aluminium fabrication</h4>
                         </div>
@@ -65,6 +66,8 @@ export default function Search () {
                         <img src="/hair styling 1.png" alt="Aluminium" />
                         <h4>Hair styling & Wig making</h4>
                         </div>
+                       </div>
+                       <div className={styles.allCourse}>
                         <div className={styles.eachImg}>
                         <img src="/plumbing 1.png" alt="Aluminium" />
                         <h4>Plumbing</h4>
@@ -81,22 +84,11 @@ export default function Search () {
                         <img src="/painting.png" alt="Aluminium" />
                         <h4>Painting</h4>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section className={styles.sect41}>
-        <div className={styles.sect42}>
-          <div className={styles.sect43}>
-          <div id={styles.home}><AiFillHome/></div>
-          <div className={styles.fill}><BsPlayFill/></div>
-          <div className={styles.fill}><AiFillHeart/></div>
-          <div className={styles.fill}><BsFillPersonFill/></div>
-
-          </div>
-        </div>
-      </section>
       </Container>
         </>
     )

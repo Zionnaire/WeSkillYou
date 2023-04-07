@@ -1,0 +1,466 @@
+.top1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.top2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 15px;
+    gap: 60px;
+}
+
+.topInput {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.inputBox {
+    width: 100%;
+    border: 1px solid rgb(52, 49, 49);
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 20px 10px 25px;
+    /* position: relative; */
+}
+
+.inputBox::placeholder {
+    font-size: 14px;
+}
+
+.search {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.TopSearches1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopSearches2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TopSearches3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopSearchesRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TopSearchesRow h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    color: rgba(40, 47, 62, 0.8);
+}
+
+.filter {
+    color: rgba(40, 47, 62, 0.8);
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.flexBox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.flexBox1 button {
+    white-space: nowrap;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    color: #282F3E;
+    width: 100%;
+}
+
+.courses1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.courses2 {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.courses3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.coursesRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coursesRow h4 {
+    width: 10%;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.015em;
+    color: rgba(40, 47, 62, 0.8);
+}
+
+.coursesBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.coursesBox1,
+.coursesBox2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+}
+
+.img,
+.img2 {
+    width: 100%;
+}
+
+.imgText {
+    position: relative;
+    width: 100%;
+}
+
+.imgText p {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: 0.012em;
+    color: #FFFFFF;
+}
+
+.seeMore {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+.seeMore p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #282F3E;
+}
+
+.seeMoreIcon {
+    color: #282F3E;
+}
+
+/* Responsiveness */
+
+@media (min-width: 1115px) {
+    .seeMore p {
+        font-size: 20px;
+    }
+
+    .imgText p {
+        font-size: 15px;
+    line-height: 15px;
+        
+    }
+
+    /* .inputBox {
+        width: 70%;
+        border: 1px solid rgb(52, 49, 49);
+        border-radius: 5px;
+        outline: none;
+        padding: 10px 20px 10px 25px;
+        position: relative;
+    } */
+    
+    /* .inputBox::placeholder {
+        font-size: 18px;
+    }
+    
+    .search {
+        position: absolute;
+        left: 452px;
+        top: 35px;
+    } */
+}
+
+@media (max-width:1024px){
+    /* .search {
+        position: absolute;
+        left: 417px;
+        top: 35px;
+    } */
+}
+
+@media (max-width:948px) {
+    /* .imgText p {
+        position: absolute;
+        font-size: 16px;
+        width: 20%;
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 15px;
+        left: 33px;
+    } */
+
+    /* .search {
+        bottom: 0;
+        left: 388px;
+    } */
+}
+
+@media (max-width:848px) {
+    /* .search {
+        bottom: 0;
+        left: 345px;
+    }
+
+    .inputBox::placeholder {
+        font-size: 15px;
+    } */
+}
+
+@media (max-width:780px) {
+    .flexBox1 {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .flexBox1 button {
+        font-size: 17px;
+    }
+
+    /* .imgText p {
+        font-size: 12px;
+        line-height: 13px;
+        width: 40%;
+    } */
+
+    /* .search {
+        left: 320px;
+    } */
+}
+
+@media (max-width:720px) {
+    .flexBox1 {
+        gap: 12px;
+        width: 100%;
+    }
+
+    .flexBox1 button {
+        font-size: 14px;
+    }
+
+    /* .imgText p {
+        font-size: 15px;
+        line-height: 13px;
+        width: 70%;
+        left: 15px;
+    } */
+/* 
+    .search {
+        left: 295px;
+    }
+
+    .inputBox::placeholder {
+        font-size: 12px;
+    } */
+}
+
+@media (max-width:694px) {
+    /* .search {
+        left: 285px;
+    } */
+}
+
+@media (max-width:678px) {
+    /* .search {
+        left: 279px;
+    } */
+}
+
+/* @media (max-width:656px) {
+    .imgText P {
+        font-size: 12px;
+    }
+
+    .search {
+        left: 270px;
+    }
+} */
+
+@media (max-width: 606px) {
+    /* .search {
+        left: 250px;
+    }
+
+    .inputBox::placeholder {
+        font-size: 11px;
+    } */
+}
+
+@media (max-width: 580px) {
+    .coursesRow h4, .TopSearchesRow h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 574px) {
+    .coursesRow h4, .TopSearchesRow h4 {
+        font-size: 20px;
+    }
+
+    .coursesBox1, .coursesBox2 {
+        flex-direction: column  ;
+        width: 70%;
+    }
+
+    /* .search {
+        bottom: 0;
+        left: 235px;
+    } */
+/* 
+    .coursesBox1 p, .coursesBox2 p {
+        width: 40%;
+        font-size: 20px;
+        left: 90px;
+        bottom: 20px;
+        line-height: 20px;
+    } */
+
+    .seeMore {
+        justify-content: center;
+    }
+}
+
+@media (max-width:560px) {
+    .flexBox1 {
+        gap: 10px;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    /* .search {
+        left: 225px;
+    }
+
+    .inputBox::placeholder {
+        font-size: 10px;
+    } */
+
+    .seeMore {
+        justify-content: center;
+    }
+}
+
+@media (max-width:530px) {
+    .flexBox1 {
+        gap: 10px;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    /* .search {
+        left: 215px;
+    }
+
+    .inputBox::placeholder {
+        font-size: 10px;
+    } */
+
+    .seeMore {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 470px) {
+    /* .search {
+        left: 190px;
+    }
+
+    .inputBox::placeholder {
+        font-size: 12px;
+    } */
+
+    /* .imgText p {
+        left: 75px;
+    } */
+}

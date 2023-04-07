@@ -1,0 +1,80 @@
+.top1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.top2 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 15px;
+}
+
+.profile h4 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.profile p {
+    color: rgba(40, 47, 62, 0.8);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.socialContacts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Projects {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding-top: 20px;
+}
+
+.Projects h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #282F3E;
+    padding-bottom: 10px;
+}

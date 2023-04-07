@@ -1,0 +1,141 @@
+.icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.poster{
+    width: 100%;
+}
+
+
+.poster h1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.012em;
+color: #0B121F;
+padding: 15px 0;
+}
+
+.comCont{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.comCont2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.comCont2 h4{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 0.015em;
+color: #404653;
+}
+
+.comCont2 h5{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: 0.01em;
+color: #9FA3A9
+}
+
+.student{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.paint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.paint img{
+    width: 100%;
+}
+
+#thumps{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 30px;
+    padding: 10px 0 20px 0;
+}
+
+.thump{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.canvas{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.01em;
+color: #282F3E;
+
+}
+
+.conts{
+    text-justify: auto;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 0.015em;
+color: #70747E;
+
+}
+
+@media screen and (min-width: 768px) {
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .poster h1{
+    font-size: 25px;
+    }
+
+    .comCont{
+        padding: 15px 0;
+    }
+
+    .comCont2 h4, .comCont2 h5{
+        font-size: 18px;
+    }
+
+    .conts{
+
+    font-size: 22px;
+    }
+
+    .canvas{
+        font-size: 25px;
+    }
+    
+}

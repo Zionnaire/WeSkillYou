@@ -60,7 +60,6 @@ color: #585D69;
     display: flex;
     flex-direction: column;
   gap: 10px;
-  
  width: 100%;
   }
 
@@ -68,7 +67,7 @@ color: #585D69;
     display: flex;
     align-items: center;
     gap: 7px;
-    width: 100%;
+    /* width: 100%; */
     white-space: nowrap;
   }
 
@@ -97,19 +96,34 @@ border: none;
     padding: 20px 0;
   }
 
+  .allCourse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
   .courseImg{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display:flex;
+    flex-direction: column;
     gap: 10px;
-    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .eachImg{
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .eachImg img{
+  width: 100%;
   }
 
   .eachImg h4{
@@ -160,3 +174,40 @@ padding: 30px 0;
 .fill{
 color: #70747E;
 }
+
+@media screen and (min-width: 768px) {
+  .allCourse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    gap: 20px;
+  }
+  .courseImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .eachImg{
+    position: relative;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .searchbtn{
+    display: flex;
+    flex-direction: row;
+ padding: 20px 0;
+ width: 100%;
+ gap: 20px;
+  }
+}
+

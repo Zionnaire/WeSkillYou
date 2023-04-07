@@ -6,6 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from '../styles/Navbar.module.css'
+import Link from 'next/link';
+
 
 function NavBar() {
   return (
@@ -17,7 +19,7 @@ function NavBar() {
             {/* <div id={styles.img}>  */}
                <img className={`img ${styles.brandlogo}`} src="/brandlogo.png" alt="logo" />
                {/* </div> */}
-                <h1 className={styles.we}>WeSkillYOU</h1>
+                <h1 className={styles.we}>WeSkillYou</h1>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas className={`offcanvas-end ${styles.Offcanvas}`}
@@ -30,39 +32,92 @@ function NavBar() {
                <div id='img-2'>
                <img className={`img2 ${styles.brandlogo}`} src="/brandlogo.png" alt="logo" />
                </div>
-                <h1 className={styles.we2}>WeSkillYOU</h1>
+                <h1 className={styles.we2}>WeSkillYou</h1>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className={`justify-content-end flex-grow-1 pe-3 ${styles.navLink}`}>
-                  <Nav.Link href="#action1" className={styles.navs}>Home</Nav.Link>
-                  <Nav.Link href="#action2" className={styles.navs}>About Us</Nav.Link>
-                  <Nav.Link href="#action2" className={styles.navs}>Login</Nav.Link>
+                  <Nav.Link href="#action1" className={styles.navs}><Link href="/">Home</Link></Nav.Link>
+                  <Nav.Link href="#action2" className={styles.navs}><Link href="/about">About Us</Link></Nav.Link>
+                  <Nav.Link href="#action2" className={styles.navs}><Link href="/signin">Login</Link></Nav.Link>
                   <NavDropdown
                     title="Signup"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Student</NavDropdown.Item>
+                    <NavDropdown.Item href="#action3"><Link href="/signup">Student</Link></NavDropdown.Item>
                     <NavDropdown.Item href="#action4">
-                      Vocational Trainer
+                      Teachers
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Tech Teacher
-                    </NavDropdown.Item>
+  
                   </NavDropdown>
                   <NavDropdown
                     title="Courses"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   className="courses">
-                    <NavDropdown.Item href="#action3">Soft Skills</NavDropdown.Item>
+                     <NavDropdown
+                     title="Soft Skills"
+                    >
                     <NavDropdown.Item href="#action4">
-                      Vocational Skills
+                      Public Speaking
+                      <NavDropdown.Item href="#action4">
+                      Leadership Skill
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Tech Skills
+                    <NavDropdown.Item href="#action4">
+                      Social Skill
                     </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action4">
+                      Marketing Skills
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    </NavDropdown>
+                    <NavDropdown
+                     title="Vocational Skills"
+                    >
+                    <NavDropdown.Item href="#action4">
+                      Mechanics
+                      <NavDropdown.Item href="#action4">
+                      Plumber
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action4">
+                      Painter
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action4">
+                      Metallurgist
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    </NavDropdown>
+                    <NavDropdown
+                     title="Tech Skills"
+                    >
+                    <NavDropdown.Item href="#action4">
+                      Web Designer
+                      <NavDropdown.Item href="#action4">
+                      Web Developer
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action4">
+                      UI/UX Designer
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action4">
+                      Content Creator
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    </NavDropdown>
                     <NavDropdown.Item href="#action5">
                       Certification
                     </NavDropdown.Item>

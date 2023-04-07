@@ -1,0 +1,255 @@
+.big_wrap{
+	width: 315px;
+	height: 100vh;
+	margin: 0 auto;
+}
+.wrap{
+	width: 100%;
+	margin: 20px auto;
+	/* border: solid 1px orange; */
+}
+.main_wrap{
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px auto;
+	gap: 40px;
+	/* background-color: #F5F5F5; */
+}
+.main_wrap fieldset{
+	width: 100%;
+	border: none;
+}
+.main_wraph h1{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 0.012em;
+	text-align: left;
+}
+
+.sect_head{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.sect_img{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.sect_img img{
+	border-radius: 60px;
+	width: 120px;
+	height: 120px;
+}
+.sect_img h2{
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 19px;
+	letter-spacing: 0.01em;
+	color: #0A306C;;
+}
+/* .sect_form form{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+} */
+.sect_form label{
+	font-size: 12px;
+	color: #0A306C;;
+	width: 100%;
+}
+.sect_form form{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.sect_form form label{
+	padding-top: 10px;
+}
+.sect_form input{
+	width: 100%;
+	padding: 15px 5px;
+
+	/* gap: 30px; */
+	border: none;
+	border-bottom: solid 1px #CFD1D4;
+}
+.sect_form input::placeholder{
+	font-size: 16px;
+}
+.RegisterSectFooter button{
+	background-color: #0A306C;
+	width: 100%;
+	padding: 20px 0;
+	/* height: 60px; */
+	border-radius: 6px;
+	color: white;
+	border: none;
+	font-size: 16px;
+}
+.RegisterSectFooter{
+	padding: 30px 0;
+}
+/* .username{
+	margin-bottom: 20px;
+} */
+.field{
+  text-align: center;
+  width: 95%;
+  border: none;
+}
+.field a img{
+  width: 25px;
+}
+.field h1{
+  /* font-family: inter; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.field h2{
+  font-size: 16px;
+}
+.field button{
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  /* background-color: #EDEEF0; */
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  border: none;
+  cursor: pointer;
+}
+.one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2pxgo
+}
+.two{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.two label{
+    color: #E27734;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.012em;
+    text-align: left;
+    width: 100%;
+}
+.two label input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+.three{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.three #signup{
+    background-color: #0A306C;;
+    color: white;
+}
+.ProfileFooter{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.ProfileFooter button{
+	width: 120px;
+	height: 60px;
+	background-color: #0A306C;
+	color: white;
+}
+@media only screen and (min-width: 500px){
+	.big_wrap{
+		width: 100%;
+	}
+	.wrap{
+		width: 70%;
+		box-shadow: 0 0 15px 1px;
+		border-radius: 6px;
+	}
+	.main_wrap{
+		width: 50%;
+	}
+	.sect_head{
+		margin-top: 50px;
+		align-items: center;
+	}
+	.sect_head svg{
+		display: none;
+	}
+	.sect_footer{
+		margin-bottom: 50px;
+	}
+	#back{
+		display: none;
+	}
+	.sect_form input{
+		border: solid 1px rgb(47, 47, 47);
+		border-radius: 3px;
+	}
+	
+  .field h2{
+    position: relative;
+  }
+  .one{
+    margin-top: 60px;
+  }
+  .two h2::before{
+    content: "";
+    width: 45%;
+    height: 1px;
+    position: absolute;
+    background: #43536A4D;
+    left: 1%;
+    top: 50%;
+  }
+  .two h2::after{
+    content: "";
+    width: 45%;
+    height: 1px;
+    position: absolute;
+    background: #43536A4D;
+    right: 1%;
+    top: 50%;
+  }
+  .three .signup{
+    border: none;
+  }
+  .ProfileFooter{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 150px;
+	margin-bottom: 20px;
+}
+}
