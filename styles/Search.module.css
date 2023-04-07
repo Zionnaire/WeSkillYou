@@ -1,0 +1,162 @@
+.sect1, .sect21{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sect2, .sect22{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sect3, .sect23{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+   
+  }
+
+  .dflex{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+  }
+  .input::placeholder{
+    font-size: 15px;
+  }
+
+  #Bicon{
+    position: absolute;
+    right: 10px;
+  }
+
+  .topSearch{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .topSearch h5, .sect23 h5{
+    font-family: 'Plus Jakarta Display';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 140%;
+letter-spacing: 0.015em;
+color: #585D69;
+
+  }
+
+  .searchbtn{
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+  
+ width: 100%;
+  }
+
+  .svbtn2{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  .sbtn{
+    background: #EDEEF0;
+border-radius: 4px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.01em;
+color: #282F3E;
+padding: 15px;
+border: none;
+
+  }
+
+  .sect23{
+
+    padding-bottom: 20px;
+  }
+
+  .sect23 h5{
+    padding: 20px 0;
+  }
+
+  .courseImg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* position: relative; */
+  }
+
+  .eachImg{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .eachImg h4{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.012em;
+color: #FFFFFF;
+
+  }
+
+
+.sect41{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #FFFFFF;
+box-shadow: 0px -2px 7px rgba(0, 0, 0, 0.1);
+border-radius: 30px 30px 0px 0px;
+padding: 30px 0;
+}
+
+.sect42{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.sect43{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+
+.home{
+  background: #000000;
+}
+.fill{
+color: #70747E;
+}
