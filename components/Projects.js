@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import React from "react";
-import styles from '@/styles/Projects.module.css'
+import styles from '@/styles/projects.module.css'
 
 export default function Projects(){
     return(

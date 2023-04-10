@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import styles from '../styles/Navbar.module.css'
+import styles from '@/styles/head.module.css'
 import Link from 'next/link';
 
 
@@ -142,3 +142,4 @@ function NavBar() {
 }
 
 export default NavBar
+

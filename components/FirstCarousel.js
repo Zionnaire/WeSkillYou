@@ -1,5 +1,5 @@
 // import Carousel from 'styled-components-carousel';
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/firstcarousel.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { AiFillHeart, AiFillStar } from "react-icons/ai";
 import React from "react";

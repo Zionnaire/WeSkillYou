@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import {BsArrow90DegLeft, BsPerson} from 'react-icons/bs'
 import {AiFillHeart, AiOutlineClockCircle, AiOutlineStar} from 'react-icons/ai'
 import React from "react";
-import styles from '@/styles/Details.module.css'
+import styles from '@/styles/details.module.css'
 import {FiVideo} from 'react-icons/fi'
 
 export default function Details (){

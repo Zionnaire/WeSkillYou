@@ -1,9 +1,9 @@
 import React from 'react';
-import {AiTwotoneSetting, AiFillHome, AiOutlineHeart, AiOutlineSearch} from 'react-icons/ai'
+import {AiTwotoneSetting, AiFillHome, AiOutlineHeart} from 'react-icons/ai'
 import {SlLogout} from 'react-icons/sl'
 import {RxDashboard} from 'react-icons/rx'
 import {MdAddAlert, MdOutlineLiveHelp, MdOutlineDashboardCustomize, MdOutlineNotificationsNone} from 'react-icons/md'
-import styles from '@/styles/SideBar.module.css'
+import styles from '@/styles/adminside.module.css'
 import Link from 'next/link';
 
 

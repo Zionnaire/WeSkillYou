@@ -1,9 +1,9 @@
 import React from 'react'
 // import img from '../images'
-import styles from '@/styles/Favourite.module.css'
+import styles from '@/styles/favourite.module.css'
 // import { Link } from 'react-router-dom'
 import Link from 'next/link'
-import NavBar from '@/components/NavBar'
+import NavBar from '@/components/head'
 import { Container } from 'react-bootstrap'
 
 

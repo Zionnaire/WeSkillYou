@@ -1,16 +1,9 @@
 import '@/styles/globals.css'
-import '@/styles/Home.module.css'
-import '@/styles/NavBar.module.css'
+import '@/styles/home.module.css'
+import '@/styles/head.module.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Head from "next/head";
 import Script from "next/script";
-import {
- Router,
-  Route,
-  Routes,
-} from "react-router-dom";
-import Homepage from '.';
-import TopSearches from '@/pages/topsearches';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -26,12 +19,6 @@ export default function App({ Component, pageProps }) {
       crossOrigin="anonymous"
     />
  <Component {...pageProps} />
-{/* <Router>
-      <Routes>
-      <Route path="/" component={Homepage} />
-      <Route path="/topsearch" component={TopSearches} /> 
-      </Routes>
-    </Router> */}
    
   </>
   )

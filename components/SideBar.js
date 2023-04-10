@@ -1,10 +1,10 @@
-import SidebarMenu from 'react-bootstrap';
+// import SidebarMenu from 'react-bootstrap';
 import React from 'react';
 import {AiTwotoneSetting, AiFillHome, AiOutlineHeart, AiOutlineSearch} from 'react-icons/ai'
 import {SlLogout} from 'react-icons/sl'
 import {BsPlayFill} from 'react-icons/bs'
 import {MdAddAlert, MdOutlineLiveHelp} from 'react-icons/md'
-import styles from '@/styles/SideBar.module.css'
+import styles from '@/styles/sidebar.module.css'
 import Link from 'next/link';
 
 export default function SideBar(){

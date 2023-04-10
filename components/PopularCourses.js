@@ -1,8 +1,8 @@
 import React from "react";
-import styles from '@/styles/PopularCourses.module.css'
-import {AiOutlineArrowRight, AiFillStar} from 'react-icons/ai'
-import NavBar from "./NavBar";
-import { Container } from "react-bootstrap";
+import styles from '@/styles/popularcourses.module.css'
+import {AiFillStar} from 'react-icons/ai'
+// import NavBar from "./navbar";
+// import { Container } from "react-bootstrap";
 import Link from "next/link";
 
 export default function PopularCourses(){

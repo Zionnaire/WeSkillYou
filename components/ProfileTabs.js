@@ -1,10 +1,10 @@
 import React from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import styles from "@/styles/ProfileTabs.module.css";
-import Followers from "./Followers";
-import SCourses from "./SCourses";
-import Projects from "./Projects";
+import styles from "@/styles/profiletabs.module.css";
+import Followers from "./followers";
+import SCourses from "./scourses";
+import Projects from "./projects";
 
 export default function ProfileTabs() {
   return (

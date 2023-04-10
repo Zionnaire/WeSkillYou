@@ -1,13 +1,7 @@
-// import Carousel from 'styled-components-carousel';
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/carousel.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {AiFillHeart, AiFillStar} from 'react-icons/ai'
 import React from 'react';
-import dynamic from "next/dynamic";
-// import Scroll from './Scroll'
-
-
-
 import Carousel from 'react-bootstrap/Carousel';
 
 function Carousels() {

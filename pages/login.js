@@ -1,6 +1,6 @@
 
 // import student from "../images/student.png"
-import styles from '@/styles/signin.module.css'
+import styles from '@/styles/login.module.css'
 import Link from 'next/link'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

@@ -1,10 +1,10 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
-import styles from "@/styles/TopSearches.module.css";
+import styles from "@/styles/topsearches.module.css";
 import { GoSettings } from "react-icons/go";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Container } from "react-bootstrap";
-import SideBar from "@/components/SideBar";
+import SideBar from "@/components/sidebar";
 // import { Link } from "react-router-dom";
 import Link from "next/link";
 
