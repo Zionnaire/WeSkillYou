@@ -2,11 +2,11 @@ import { Container } from "react-bootstrap";
 import React from "react";
 // import {HiOutlineArrowUturnDown} from 'react-icons/hi'
 import {BsArrow90DegLeft} from 'react-icons/bs'
-import styles from '@/styles/filters.module.css'
+import styles from "@/styles/filters.module.css"
 import Link from "next/link";
 
 
-export default function Filters () {
+export default function Filters() {
     return(
         <>
         <Container fluid>
@@ -14,7 +14,7 @@ export default function Filters () {
             <div className={styles.sect2}>
                 <div className={styles.sect3}> 
                <div id={styles.left}><Link href="/topsearches"><BsArrow90DegLeft/></Link></div>
-               <div className={styles.filter}>
+               <div className={styles.filt}>
                <h5>Sort by</h5>
                <div className={styles.filterInput}>
                 <input type="checkbox" />
@@ -30,7 +30,7 @@ export default function Filters () {
                </div>
                </div>
 
-               <div className={styles.filter}>
+               <div className={styles.filt}>
                <h5>Level</h5>
                <div className={styles.filterInput}>
                 <input type="checkbox" />
@@ -46,7 +46,7 @@ export default function Filters () {
                </div>
                </div>
 
-               <div className={styles.filter}>
+               <div className={styles.filt}>
                <h5>Duration</h5>
                <div className={styles.filterInput}>
                 <input type="checkbox" />

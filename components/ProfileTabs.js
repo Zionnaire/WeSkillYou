@@ -6,7 +6,7 @@ import Followers from "./followers";
 import SCourses from "./scourses";
 import Projects from "./projects";
 
-export default function ProfileTabs() {
+export default function Profiletabs() {
   return (
     <>
       <div className={styles.c0}>

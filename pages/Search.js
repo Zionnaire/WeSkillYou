@@ -2,10 +2,8 @@ import React from "react"
 import { Container, Form} from "react-bootstrap"
 import {BsSearch} from 'react-icons/bs'
 import {GoSettings} from 'react-icons/go'
-import styles from '@/styles/search.module.css'
-// import {BsFillPersonFill, BsPlayFill} from 'react-icons/bs'
-// import {AiFillHeart, AiFillHome} from 'react-icons/ai'
-// import Form from 'react-bootstrap/Form';
+import styles from "@/styles/search.module.css"
+
 
 export default function Search () {
     return(

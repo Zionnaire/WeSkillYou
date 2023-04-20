@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "@/styles/profile.module.css"
-import ProfileTabs from "@/components/profiletabs";
+import styles from "@/styles/profile.module.css";
+import Profiletabs from "@/components/profiletabs";
 import SideBar from "@/components/sidebar";
 
 export default function Profile(){
@@ -23,7 +23,7 @@ export default function Profile(){
                             <img src="/Layer 2 (2).png"/>
                         </div>
                         <div className={styles.Projects}>
-                           <ProfileTabs/>
+                           <Profiletabs/>
                         </div>
                     </div>
                 </div>
