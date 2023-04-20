@@ -7,7 +7,7 @@ import styles from '@/styles/adminside.module.css'
 import Link from 'next/link';
 
 
-export default function AdminSide(){
+export default function Adminside(){
     return(
       <>
       <section className={styles.section1}>

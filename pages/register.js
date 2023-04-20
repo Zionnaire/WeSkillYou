@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@/styles/register.module.css'
 import Link from 'next/link'
 import axios from 'axios';
@@ -10,12 +10,15 @@ export default function Register() {
 	const[email, setEmail] = useState('')
 	const[password, setPassword] = useState('');
 	const[cPassword, setCpassword] = useState('')
+	const[role, setRole] = useState("")
+	const [roles,setRoles] = useState([])
 let handleRegister = async() =>{
 	let request = {
 		username : username,
 		email : email,
 		password : password,
-		cPassword : cPassword
+		cPassword : cPassword,
+		role:role
 	}
 	let response = await axios.post('http://localhost:4000/register', request)
 	// console.log(response);
@@ -23,6 +26,13 @@ let handleRegister = async() =>{
 	return <Link href='/signin'></Link>
 	
 }
+let fetchRoles =async()=>{
+	let resp = await axios.get('http://localhost:4000/roles')
+	setRoles(resp.data.roles)
+}
+useEffect(() => {
+	fetchRoles()
+})
 
   return (
     <>
@@ -55,6 +65,14 @@ let handleRegister = async() =>{
 								<input id="pass2" type="password" placeholder="Confirm password" onChange={e => setCpassword(e.target.value)} required/>
 								
 							</label>
+						
+							<select value={role} onChange={(e) => {
+          setRole(e.target.value);}}>
+								{roles.map(role=>(
+									<option value={role._id}>{role.name}</option>
+								))}
+								
+							</select>
 						</form>
 					</fieldset>
 					<fieldset className={styles.RegisterSectFooter}>

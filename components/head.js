@@ -15,7 +15,7 @@ function NavBar() {
       {["sm"].map((expand) => (
         <Navbar key={expand}  expand={expand} className={styles.all}>
           <Container fluid>
-            <Navbar.Brand href="#" className={`Navbar_navbrand__UmsyW ${styles.navbrand}`}>
+            <Navbar.Brand className={`Navbar_navbrand__UmsyW ${styles.navbrand}`}>
             {/* <div id={styles.img}>  */}
                <img className={`img ${styles.brandlogo}`} src="/brandlogo.png" alt="logo" />
                {/* </div> */}
@@ -37,15 +37,15 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className={`justify-content-end flex-grow-1 pe-3 ${styles.navLink}`}>
-                  <Nav.Link href="#action1" className={styles.navs}><Link href="/">Home</Link></Nav.Link>
-                  <Nav.Link href="#action2" className={styles.navs}><Link href="/about">About Us</Link></Nav.Link>
-                  <Nav.Link href="#action2" className={styles.navs}><Link href="/login">Login</Link></Nav.Link>
+                  <Link className={styles.navs} href="/">Home</Link>
+                 <Link className={styles.navs} href="/about">About Us</Link>
+                  <Link className={styles.navs} href="/login">Login</Link>
                   <NavDropdown
                     title="Signup"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3"><Link href="/signup">Student</Link></NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item ><Link href="/signup">Student</Link></NavDropdown.Item>
+                    <NavDropdown.Item>
                       Teachers
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -58,17 +58,17 @@ function NavBar() {
                      <NavDropdown
                      title="Soft Skills"
                     >
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item >
                       Public Speaking
-                      <NavDropdown.Item href="#action4">
+                      <NavDropdown.Item >
                       Leadership Skill
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item>
                       Social Skill
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item>
                       Marketing Skills
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -79,17 +79,17 @@ function NavBar() {
                     <NavDropdown
                      title="Vocational Skills"
                     >
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item >
                       Mechanics
-                      <NavDropdown.Item href="#action4">
+                      <NavDropdown.Item >
                       Plumber
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item >
                       Painter
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item >
                       Metallurgist
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -100,17 +100,17 @@ function NavBar() {
                     <NavDropdown
                      title="Tech Skills"
                     >
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item >
                       Web Designer
-                      <NavDropdown.Item href="#action4">
+                      <NavDropdown.Item >
                       Web Developer
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item >
                       UI/UX Designer
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item >
                       Content Creator
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
@@ -118,7 +118,7 @@ function NavBar() {
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     </NavDropdown>
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item >
                       Certification
                     </NavDropdown.Item>
                   </NavDropdown>
