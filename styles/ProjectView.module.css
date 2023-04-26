@@ -73,7 +73,7 @@ color: #9FA3A9
 
 #thumps{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
     gap: 30px;
     padding: 10px 0 20px 0;
