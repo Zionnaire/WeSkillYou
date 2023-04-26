@@ -25,7 +25,7 @@ export default function Signup() {
 					</fieldset>
 					<fieldset className={styles.signupsect_footer}>
 						<h2>Already have an account?</h2>
-						<Link href="/signin"><button className={styles.SignupSignin}>Sign in</button></Link>
+						<Link href="/login"><button className={styles.SignupSignin}>Sign in</button></Link>
 					</fieldset>
 				</div>
 			</div>
