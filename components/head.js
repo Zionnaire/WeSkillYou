@@ -38,15 +38,15 @@ function NavBar() {
               <Offcanvas.Body>
                 <Nav className={`justify-content-end flex-grow-1 pe-3 ${styles.navLink}`}>
                   <Link className={styles.navs} href="/">Home</Link>
-                 <Link className={styles.navs} href="/about">About Us</Link>
-                  <Link className={styles.navs} href="/login">Login</Link>
+                 <Link className={styles.navs} href="/aboutus">About Us</Link>
+                  <Link className={styles.navs} href="/mylogin">Login</Link>
                   <NavDropdown
                     title="Signup"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item ><Link href="/signup">Student</Link></NavDropdown.Item>
+                    <NavDropdown.Item ><Link href="/mysignup">Student</Link></NavDropdown.Item>
                     <NavDropdown.Item>
-                      Teachers
+                    <Link href="/mysignup">Tutor</Link>
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
   

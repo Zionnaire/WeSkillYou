@@ -18,14 +18,14 @@ export default function Signup() {
 						<Link href="/"><button><img src="/Ggoogle.png" alt="Google"/>Sign Up with Google</button></Link>
 						<Link href="/"><button><img src="/facebook.png" alt="Facebook"/>Sign Up with Facebook</button></Link>
 						<h2>or</h2>
-						<Link href="/register"><button><strong>Sign Up with Email</strong></button></Link>
+						<Link href="/myregister"><button><strong>Sign Up with Email</strong></button></Link>
 						<p>
 							By signing up you are agreed with our friendly <a href='#'>terms and condition</a>.
 						</p>
 					</fieldset>
 					<fieldset className={styles.signupsect_footer}>
 						<h2>Already have an account?</h2>
-						<Link href="/login"><button className={styles.SignupSignin}>Sign in</button></Link>
+						<Link href="/mylogin"><button className={styles.SignupSignin}>Sign in</button></Link>
 					</fieldset>
 				</div>
 			</div>

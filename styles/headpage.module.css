@@ -33,12 +33,18 @@
   color: #FFFFFF !important;
   }
   .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     white-space: nowrap;
     color: #FFFFFF;
+    gap: 8px;
+    
 }
 
 .navs{
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 /* .offcanvas-end{

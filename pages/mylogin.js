@@ -48,9 +48,9 @@ export default function Login() {
 						</label>
 					</fieldset>
 					<fieldset className={styles.SigninSectFooter}>
-						<Link href="/login"><button className={styles.Signup} onClick={handleLogin}>Log in</button></Link>
+						<Link href="/mylogin"><button className={styles.Signup} onClick={handleLogin}>Log in</button></Link>
 						<Link href="/"><p className={styles.fort}>Forget password</p></Link>
-						<p className={styles.Pbo}>Don’t have an account?<Link href="/signup"> Sign up</Link></p>
+						<p className={styles.Pbo}>Don’t have an account?<Link href="/mysignup"> Sign up</Link></p>
 					</fieldset>
 				</div>
 			</div>
