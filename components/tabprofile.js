@@ -2,9 +2,9 @@ import React from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import styles from "../styles/pageprofiletabs.module.css";
-import Followers from "./followers";
-import SCourses from "./scourses";
-import Projects from "./projects";
+import Followers from "./comfollowers";
+import SCourses from "./myscourses";
+import Projects from "./myprojects";
 
 export default function Profiletabs() {
   return (

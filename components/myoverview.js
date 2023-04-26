@@ -6,7 +6,7 @@ import React from "react";
 import styles from '../styles/overviewpage.module.css'
 // import {BsFillPersonFill, BsPlayFill} from 'react-icons/bs'
 // import {AiFillHeart, AiFillHome} from 'react-icons/ai'
-import OL from "./oloverpage";
+import OL from "./olover";
 import Link from "next/link";
 
 export default function Overview(){
