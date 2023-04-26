@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 import React from "react";
 // import {HiOutlineArrowUturnDown} from 'react-icons/hi'
 import {BsArrow90DegLeft} from 'react-icons/bs'
-import styles from "../styles/filters.module.css"
+import styles from "../styles/filterspage.module.css"
 import Link from "next/link";
 
 

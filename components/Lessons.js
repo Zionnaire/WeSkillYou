@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "../styles/lessons.module.css";
-import OLLessons from "./ollessons";
+import styles from "../styles/lessonspage.module.css";
+import OLLessons from "./ollessonspage";
 import {AiOutlineCloudDownload} from 'react-icons/ai'
 
 export default function Lessons() {

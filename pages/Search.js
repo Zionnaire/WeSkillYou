@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Form} from "react-bootstrap"
 import {BsSearch} from 'react-icons/bs'
 import {GoSettings} from 'react-icons/go'
-import styles from "../styles/search.module.css"
+import styles from "../styles/searchpage.module.css"
 
 
 export default function Search () {

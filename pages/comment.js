@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import {FaRegThumbsUp} from 'react-icons/fa'
 import React from "react";
-import styles from "../styles/comment.module.css"
+import styles from "../styles/commentpage.module.css"
 import {BsArrow90DegLeft} from 'react-icons/bs'
 // import {AiFillHeart, AiFillHome} from 'react-icons/ai'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 // import img from '../images'
-import styles from '../styles/favourite.module.css'
+import styles from '../styles/favouritepage.module.css'
 // import { Link } from 'react-router-dom'
 import Link from 'next/link'
 import NavBar from '../components/head'

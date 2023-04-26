@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/ollessons.module.css";
+import styles from "../styles/ollessonspage.module.css";
 // import { Container } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";

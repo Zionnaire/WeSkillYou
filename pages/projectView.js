@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "../styles/projectview.module.css";
+import styles from "../styles/projectpage.module.css";
 import { BsArrow90DegLeft, BsFillShareFill } from "react-icons/bs";
 import {FaRegThumbsUp} from "react-icons/fa"
 import {CiMenuKebab} from "react-icons/ci"

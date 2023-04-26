@@ -1,8 +1,8 @@
-import Admindash from "@/components/admindash";
-import Adminside from "@/components/adminside";
+import Admindash from "@/components/admindashpage";
+import Adminside from "@/components/adminpage";
 import React from "react";
 import styles from '../styles/admindash.module.css'
-import NavBar from "@/components/head";
+import NavBar from "@/components/headpage";
 // import NewNavbar from "@/components/newsidebar";
 
 export default function Admin() {

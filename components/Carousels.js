@@ -1,4 +1,4 @@
-import styles from '../styles/carousel.module.css'
+import styles from '../styles/carouselpage.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {AiFillHeart, AiFillStar} from 'react-icons/ai'
 import React from 'react';

@@ -1,6 +1,6 @@
 import React from 'react'
 // import help from '../images/help.png'
-import styles from '../styles/help.module.css'
+import styles from '../styles/helppage.module.css'
 
 export default function Help() {
   return (

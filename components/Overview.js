@@ -3,10 +3,10 @@ import {AiOutlineStar} from 'react-icons/ai'
 import { BsPerson} from 'react-icons/bs'
 import {FaRegThumbsUp} from 'react-icons/fa'
 import React from "react";
-import styles from '../styles/overview.module.css'
+import styles from '../styles/overviewpage.module.css'
 // import {BsFillPersonFill, BsPlayFill} from 'react-icons/bs'
 // import {AiFillHeart, AiFillHome} from 'react-icons/ai'
-import OL from "./olover";
+import OL from "./oloverpage";
 import Link from "next/link";
 
 export default function Overview(){

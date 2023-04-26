@@ -1,7 +1,7 @@
 
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '../styles/homepage.module.css'
+import styles from '../styles/pagehomepage.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import Carousel from '../components/carousels'

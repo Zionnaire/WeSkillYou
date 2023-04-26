@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import styles from '../styles/signup.module.css'
+import styles from '../styles/signuppage.module.css'
 import Link from 'next/link'
 
 export default function Signup() {
