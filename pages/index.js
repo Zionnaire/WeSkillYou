@@ -23,7 +23,7 @@ export default function Homepage(){
                             Start, switch or advance your career with courses 
                             and get certificates.
                         </h3>
-                        <Link href="/signup"><button className={styles.sectBtn}>GET STARTED</button></Link>
+                        <Link href="/mysignup"><button className={styles.sectBtn}>GET STARTED</button></Link>
                     </div>
 
                     <div className={`"col-sm-4" ${styles.sect3}`}>
