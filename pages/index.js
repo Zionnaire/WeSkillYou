@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import React from "react";
-import styles from '../styles/home.module.css'
+import styles from '../styles/pagehome.module.css'
 import NavBar from "../components/head";
 import {AiOutlineSearch, AiFillStar} from 'react-icons/ai'
 import {FcFaq} from 'react-icons/fc'
