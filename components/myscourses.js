@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "../styles/scourses.module.css";
+import styles from "../styles/scoursespage.module.css";
 import { AiOutlineStar } from "react-icons/ai";
 
 export default function SCourses() {

@@ -1,6 +1,6 @@
 import React from "react"
 // import Details from "@/pages/courses"
-import PopularCourses from "../components/pagepopularcourses"
+import PopularCourses from "../components/mypopularcourses"
 import { Container } from "react-bootstrap"
 // import NavBar from "@/components/navbar"
 import styles from "../styles/pagedashboard.module.css"

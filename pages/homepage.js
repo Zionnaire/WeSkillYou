@@ -4,12 +4,12 @@ import { Inter } from 'next/font/google'
 import styles from '../styles/pagehomepage.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
-import Carousel from '../components/carousels'
+import Carousel from '../components/minecarousels'
 import NavBar from '../components/head';
 import {BsFillPersonFill, BsPlayFill} from 'react-icons/bs'
 import {AiFillHeart, AiFillHome} from 'react-icons/ai'
-import FourthCarousel from '../components/fourthcarousel';
-import FirstCarousel from '../components/firstcarousel';
+import FourthCarousel from '../components/myfourthcarousel';
+import FirstCarousel from '../components/myfirstcarousel';
 
 
 

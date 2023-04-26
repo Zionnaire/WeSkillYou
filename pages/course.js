@@ -1,7 +1,7 @@
 import React from "react";
 import Lessons from "../components/mylesson";
 import Overview from "../components/myoverview";
-import Details from "../components/details";
+import Details from "../components/mydetails";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 // import { Container } from "react-bootstrap";
