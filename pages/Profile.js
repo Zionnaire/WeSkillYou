@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import styles from "../styles/pageprofile.module.css";
-import Profiletabs from "../components/profiletabs";
+import Profiletabs from "../components/tabprofile";
 import SideBar from "../components/sidebarpage";
 
 export default function Profile(){

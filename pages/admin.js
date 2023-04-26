@@ -1,5 +1,5 @@
-import Admindash from "../components/admindash";
-import Adminside from "../components/adminside";
+import Admindash from "../components/dashadmin";
+import Adminside from "../components/sideadmin";
 import React from "react";
 import styles from '../styles/admindashpage.module.css'
 import NavBar from "../components/head";
