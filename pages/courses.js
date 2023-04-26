@@ -1,12 +1,12 @@
 import React from "react";
-import Lessons from "@/components/lessons";
-import Overview from "@/components/overview";
-import Details from "@/components/details";
+import Lessons from "../components/lessons";
+import Overview from "../components/overview";
+import Details from "../components/details";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 // import { Container } from "react-bootstrap";
-import SideBar from "@/components/sidebar";
-import styles from '@/styles/courses.module.css'
+import SideBar from "../components/sidebar";
+import styles from '../styles/courses.module.css'
 
 export default function Courses() {
   return (

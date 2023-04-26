@@ -1,6 +1,6 @@
 import { AiOutlineSearch } from "react-icons/ai";
 import Form from "react-bootstrap/Form";
-import styles from "@/styles/admindash.module.css";
+import styles from "../styles/admindash.module.css";
 import { HiOutlineClipboardList } from "react-icons/hi";
 import { RiNotification2Line } from "react-icons/ri";
 import { MdPeopleAlt } from "react-icons/md";

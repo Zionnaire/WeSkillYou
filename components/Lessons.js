@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "@/styles/lessons.module.css";
+import styles from "../styles/lessons.module.css";
 import OLLessons from "./ollessons";
 import {AiOutlineCloudDownload} from 'react-icons/ai'
 

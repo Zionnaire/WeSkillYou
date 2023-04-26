@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "@/styles/followers.module.css";
+import styles from "../styles/followers.module.css";
 
 export default function Followers() {
   return (

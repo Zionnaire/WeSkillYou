@@ -1,7 +1,7 @@
 import Admindash from "@/components/admindash";
 import Adminside from "@/components/adminside";
 import React from "react";
-import styles from '@/styles/admindash.module.css'
+import styles from '../styles/admindash.module.css'
 import NavBar from "@/components/head";
 // import NewNavbar from "@/components/newsidebar";
 

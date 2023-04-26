@@ -4,7 +4,7 @@ import {AiTwotoneSetting, AiFillHome, AiOutlineHeart, AiOutlineSearch} from 'rea
 import {SlLogout} from 'react-icons/sl'
 import {BsPlayFill} from 'react-icons/bs'
 import {MdAddAlert, MdOutlineLiveHelp} from 'react-icons/md'
-import styles from '@/styles/sidebar.module.css'
+import styles from '../styles/sidebar.module.css'
 import Link from 'next/link';
 
 export default function SideBar(){

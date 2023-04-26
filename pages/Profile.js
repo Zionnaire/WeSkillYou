@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "@/styles/profile.module.css";
-import Profiletabs from "@/components/profiletabs";
-import SideBar from "@/components/sidebar";
+import styles from "../styles/profile.module.css";
+import Profiletabs from "../components/profiletabs";
+import SideBar from "../components/sidebar";
 
 export default function Profile(){
     return(

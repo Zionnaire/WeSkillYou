@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import styles from "@/styles/about.module.css";
+import styles from "../styles/about.module.css";
 import NavBar from "@/components/head";
 
 export default function About() {

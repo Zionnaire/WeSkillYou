@@ -1,15 +1,15 @@
 
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/homepage.module.css'
+import styles from '../styles/homepage.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import Carousel from '../components/carousels'
-import NavBar from '@/components/head';
+import NavBar from '../components/head';
 import {BsFillPersonFill, BsPlayFill} from 'react-icons/bs'
 import {AiFillHeart, AiFillHome} from 'react-icons/ai'
-import FourthCarousel from '@/components/fourthcarousel';
-import FirstCarousel from '@/components/firstcarousel';
+import FourthCarousel from '../components/fourthcarousel';
+import FirstCarousel from '../components/firstcarousel';
 
 
 

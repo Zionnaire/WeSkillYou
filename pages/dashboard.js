@@ -1,10 +1,10 @@
 import React from "react"
 // import Details from "@/pages/courses"
-import PopularCourses from "@/components/popularcourses"
+import PopularCourses from "../components/popularcourses"
 import { Container } from "react-bootstrap"
 // import NavBar from "@/components/navbar"
-import styles from "@/styles/dashboard.module.css"
-import SideBar from "@/components/sidebar"
+import styles from "../styles/dashboard.module.css"
+import SideBar from "../components/sidebar"
 
 export default function Students(){
     return(

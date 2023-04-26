@@ -1,5 +1,5 @@
 import React from "react";
-import styles from '@/styles/popularcourses.module.css'
+import styles from '../styles/popularcourses.module.css'
 import {AiFillStar} from 'react-icons/ai'
 // import NavBar from "./navbar";
 // import { Container } from "react-bootstrap";
