@@ -1,5 +1,5 @@
-import '../styles/globals.css'
-import '../styles/home.module.css'
+import '../styles/pageglobals.css'
+import '../styles/pagehome.module.css'
 import '../styles/headpage.module.css'
 // import '../styles/about.module.css'
 // import '../styles/admindash.module.css'
