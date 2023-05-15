@@ -14,13 +14,13 @@ export default function Register() {
 	const [roles,setRoles] = useState([])
 let handleRegister = async() =>{
 	let request = {
-		username : username,
+		uName : username,
 		email : email,
 		password : password,
 		cPassword : cPassword,
 		role:role
 	}
-	let response = await axios.post('http://localhost:4000/register', request)
+	let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/register', request)
 	// console.log(response);
 	toast(response.data.message)
 	return <Link href='/signin'></Link>
@@ -50,19 +50,19 @@ useEffect(() => {
 					<fieldset className={styles.sect_form}>
 						<form>
 							<label for="username">
-								<input id="username" type="text" placeholder="username" onChange={e =>setUsername(e.target.value)} required/>
+								<input id="username" type="text" value={username} placeholder="username" onChange={e =>setUsername(e.target.value)} required/>
 								    
 							</label>
 							<label for="email">
-								<input id="email" type="email" placeholder="email@address.com" onChange={e =>setEmail(e.target.value)} required/>
+								<input id="email" type="email" value={email} placeholder="email@address.com" onChange={e =>setEmail(e.target.value)} required/>
 								
 							</label>
 							<label for="pass1">
-								<input id="pass1" type="password" placeholder="password" onChange={e => setPassword(e.target.value)} required/>
+								<input id="pass1" type="password" value={password} placeholder="password" onChange={e => setPassword(e.target.value)} required/>
 								
 							</label>
 							<label for="pass2">
-								<input id="pass2" type="password" placeholder="Confirm password" onChange={e => setCpassword(e.target.value)} required/>
+								<input id="pass2" type="password" value={cPassword} placeholder="Confirm password" onChange={e => setCpassword(e.target.value)} required/>
 								
 							</label>
 						

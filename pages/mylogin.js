@@ -15,10 +15,10 @@ export default function Login() {
 	const[password, setPassword] = useState('')
 	let handleLogin = async()=>{
 		let req = {
-		  username:username,
+		  uName:username,
 		  password:password
 		}
-		let response = await axios.post('http://localhost:4000/login', req)
+		let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/login', req)
 		toast(response.data.message)
 		Router.push('/dashboard')
 		
@@ -39,11 +39,11 @@ export default function Login() {
 						<Link href="/"><button><img src="/facebook.png" alt="Facebook"/>Log in with Facebook</button></Link>
 						<h2>or</h2>
 						<label for="username">
-							<input type="text" placeholder="Username" onChange={e => setUsername(e.target.value)} required/><br/>
+							<input type="text" value={username} placeholder="Username" onChange={e => setUsername(e.target.value)} required/><br/>
 						</label>
 						
 						<label for="password">
-							<input id="password" type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} required/><br/>
+							<input id="password" type="password" value={password} placeholder="Password" onChange={e => setPassword(e.target.value)} required/><br/>
 							password is not vallid
 						</label>
 					</fieldset>
