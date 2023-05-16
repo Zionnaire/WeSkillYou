@@ -25,10 +25,10 @@ let handleRegister = async() =>{
 	// console.log(response);
 	toast(response.data.message)
 	if(role === "Student"){
-		Router.push("/login")
+		Router.push("/mylogin")
 	}
 	else if(role === "Tutor"){
-		Router.push("/login")
+		Router.push("/tutorpage")
 	}
 	else {
 		Router.push("/myadmin")
