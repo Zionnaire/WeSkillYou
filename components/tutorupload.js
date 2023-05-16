@@ -59,7 +59,7 @@ export default function TutorUploads() {
               <h1 className={styles.status} >Available:</h1>
                
             <hr />
-            {courseItems.map((course, index) => (
+            {/* {courseItems.map((course, index) => (
               <div key={index} className={styles.res4}>
                 <img className={styles.res4img} src={course.video} />
              
@@ -68,15 +68,10 @@ export default function TutorUploads() {
                   <h2> {course.desc}</h2>
                   <h3>
                     {course.price}{" "}
-                    {/* <FiPlusSquare
-                      onClick={() => {
-                        handleAddToCart(food);
-                      }}
-                    />{" "} */}
                   </h3>
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </section>
