@@ -30,7 +30,7 @@ let handleRegister = async() =>{
 	else if(role === "Tutor"){
 		Router.push("/login")
 	}
-	else{
+	else {
 		Router.push("/myadmin")
 	}
 
@@ -80,7 +80,6 @@ let handleRegister = async() =>{
 								
 									<option value={role._id}>Student</option>
 									<option value={role._id}>Tutor</option>
-									<option value={role._id}>Admin</option>
 									
 							
 								

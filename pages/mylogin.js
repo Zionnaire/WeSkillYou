@@ -13,16 +13,27 @@ export default function Login() {
 
 	const[username, setUsername] = useState('')
 	const[password, setPassword] = useState('')
+	const[role, setRole] = useState('')
 	let handleLogin = async()=>{
 		let req = {
 		  uName:username,
-		  password:password
+		  password:password,
+		  role: role
 		}
 		let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/login', req)
-		toast(response.data.message)
-		Router.push('/dashboard')
+		if(role.name == "Admin"){
+			toast(response.data.message)
+			Router.push('/myadmin')
+		}
+		else if(role.name == "Student"){
+			toast(response.data.message)
+			Router.push('/dashboard')
+		}
+		else if(role.name == "Tutor"){
+			toast(response.data.message)
+			Router.push('/tutorpage')
+		}
 		
-	  
 	}
   return (
     <>
