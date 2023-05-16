@@ -69,10 +69,11 @@ useEffect(() => {
 						
 							<select value={role} onChange={(e) => {
           setRole(e.target.value);}}>
-								{roles.map(role=>(
-									<option value={role._id}>{role.name}</option>
+								
+									<option value={role._id}>Student</option>
+									<option>Tutor</option>
 									
-								))}
+							
 								
 							</select>
 						</form>
