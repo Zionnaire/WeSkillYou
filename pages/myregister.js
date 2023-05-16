@@ -24,11 +24,14 @@ let handleRegister = async() =>{
 	let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/register', request)
 	// console.log(response);
 	toast(response.data.message)
-	if(role !== "Student" && role !== "Tutor"){
-		Router.push("/myadmin")
+	if(role === "Student"){
+		Router.push("/login")
+	}
+	else if(role === "Tutor"){
+		Router.push("/login")
 	}
 	else{
-		Router.push("/mylogin")
+		Router.push("/myadmin")
 	}
 
 }
