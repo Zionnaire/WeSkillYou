@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 // import { CartContext } from "../context/cartContext";
 // import { useContext } from "react";
 import axios from "axios";
-import styles from "../styles/mytutor"
+import styles from "../styles/mytutor.module.css"
 // import { createLocation } from '@remix-run/router/dist/history'
 
 export default function TutorUploads() {
