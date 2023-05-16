@@ -21,17 +21,18 @@ export default function Login() {
 		  role: role
 		}
 		let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/login', req)
-		if(role.name == "Admin"){
-			toast(response.data.message)
-			Router.push('/myadmin')
-		}
-		else if(role.name == "Student"){
+	
+		 if(role == "Student"){
 			toast(response.data.message)
 			Router.push('/dashboard')
 		}
-		else if(role.name == "Tutor"){
+		else if(role == "Tutor"){
 			toast(response.data.message)
 			Router.push('/tutorpage')
+		}
+		else{
+			toast(response.data.message)
+			Router.push('/myadmin')
 		}
 		
 	}
@@ -59,7 +60,7 @@ export default function Login() {
 						</label>
 					</fieldset>
 					<fieldset className={styles.SigninSectFooter}>
-						<Link href="/mylogin"><button className={styles.Signup} onClick={handleLogin}>Log in</button></Link>
+						<button className={styles.Signup} onClick={handleLogin}>Log in</button>
 						<Link href="/"><p className={styles.fort}>Forget password</p></Link>
 						<p className={styles.Pbo}>Don’t have an account?<Link href="/mysignup"> Sign up</Link></p>
 					</fieldset>
