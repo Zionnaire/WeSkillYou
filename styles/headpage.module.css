@@ -39,7 +39,7 @@
     align-items: center;
     white-space: nowrap;
     color: #FFFFFF;
-    gap: 10px;
+    gap: 15px;
     /* padding-bottom: 20px; */
 }
 
@@ -48,6 +48,10 @@
 .navs{
   color: #FFFFFF;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
 }
 
 /* .offcanvas-end{
