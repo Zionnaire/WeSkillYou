@@ -23,18 +23,18 @@ export default function Login() {
 		console.log(role);
 		let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/login', req)
 	
-		 if(role == "Student"){
-			toast(response.data.message)
-			Router.push('/dashboard')
-		}
-		else if(role == "Tutor"){
-			toast(response.data.message)
-			Router.push('/tutorpage')
-		}
-		else{
-			toast(response.data.message)
-			Router.push('/myadmin')
-		}
+		//  if(role === "Student"){
+		// 	toast(response.data.message)
+		// 	Router.push('/dashboard')
+		// }
+		// else if(role === "Tutor"){
+		// 	toast(response.data.message)
+		// 	Router.push('/tutorpage')
+		// }
+		// else{
+		// 	toast(response.data.message)
+		// 	Router.push('/myadmin')
+		// }
 		
 	}
   return (
