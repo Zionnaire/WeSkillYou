@@ -20,6 +20,7 @@ export default function Login() {
 		  password:password,
 		  role: role
 		}
+		console.log(role);
 		let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/login', req)
 	
 		 if(role == "Student"){
