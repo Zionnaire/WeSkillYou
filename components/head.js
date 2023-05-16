@@ -44,6 +44,7 @@ function NavBar() {
                     title="Signup"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
+                    <NavDropdown.Item ><Link href="/adminregister">Admin</Link></NavDropdown.Item>
                     <NavDropdown.Item ><Link href="/mysignup">Student</Link></NavDropdown.Item>
                     <NavDropdown.Item>
                     <Link href="/mysignup">Tutor</Link>

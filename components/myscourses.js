@@ -12,18 +12,18 @@ export default function SCourses() {
             <div className={styles.cont3}>
               <div className={styles.courses}>
                 <div className={styles.names}>
-                  <div className={styles.namesImg}>
+                  {/* <div className={styles.namesImg}> */}
                     <img src="/unsplash_MU3SIgq5Gpw.png" />
-                  </div>
+                  {/* </div> */}
                   <div className={styles.ImgTxt}>
                     <h4>Acrylic painting on canvas</h4>
-                    <div className={styles.lowerTxt}>
+                    {/* <div className={styles.lowerTxt}> */}
                       <p>Toluade Tim</p>
                       <div className={styles.txtFlex}>
                         <img src="/user 1.png" />
                         <p>2k student</p>
                       </div>
-                    </div>
+                    {/* </div> */}
                   </div>
                 </div>
                 <div className={styles.rating}>
@@ -87,10 +87,11 @@ export default function SCourses() {
                       </div>
                     </div>
                   </div>
-                </div>
+               
                 <div className={styles.rating}>
                   <p>4.7</p>
                   <AiOutlineStar />
+                   </div>
                 </div>
               </div>
             </div>

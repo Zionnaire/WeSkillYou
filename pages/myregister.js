@@ -4,6 +4,7 @@ import Link from 'next/link'
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Router from 'next/router'
 
 export default function Register() {
 	const[username, setUsername] = useState('');
@@ -23,8 +24,8 @@ let handleRegister = async() =>{
 	let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/register', request)
 	// console.log(response);
 	toast(response.data.message)
-	return <Link href='/signin'></Link>
-	
+	Router.push("/dashboard")
+
 }
 let fetchRoles =async()=>{
 	let resp = await axios.get('http://localhost:4000/roles')
@@ -69,7 +70,7 @@ useEffect(() => {
 							<select value={role} onChange={(e) => {
           setRole(e.target.value);}}>
 								{roles.map(role=>(
-									<option value={role._id}>{role.name.Student || role.name.Tutor}</option>
+									<option value={role._id}>{role.name}</option>
 									
 								))}
 								
