@@ -27,13 +27,13 @@ let handleRegister = async() =>{
 	Router.push("/dashboard")
 
 }
-let fetchRoles =async()=>{
-	let resp = await axios.get('http://localhost:4000/roles')
-	setRoles(resp.data.roles)
-}
-useEffect(() => {
-	fetchRoles()
-})
+// let fetchRoles =async()=>{
+// 	let resp = await axios.get('http://localhost:4000/roles')
+// 	setRoles(resp.data.roles)
+// }
+// useEffect(() => {
+// 	fetchRoles()
+// })
 
   return (
     <>
