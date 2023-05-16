@@ -34,8 +34,8 @@ export default function SideBar(){
           </div>
           <div className={styles.dash}>
          <Link href="/dashboard"> <button id={styles.dashbtn}><AiFillHome/>HOME</button></Link>
-           <Link href="/topsearches"><button id={styles.dashbtn}> <BsPlayFill/>GALLERY</button></Link>
-           <h5><Link href="/favourite"><AiOutlineHeart/> FAVOURITES</Link></h5>
+           <Link href="/mytopsearches"><button id={styles.dashbtn}> <BsPlayFill/>GALLERY</button></Link>
+           <h5><Link href="/favourites"><AiOutlineHeart/> FAVOURITES</Link></h5>
             <h5><AiOutlineSearch/> SEARCH</h5>
             <h6><Link href="/settings"><AiTwotoneSetting/> SETTINGS</Link></h6>
             <div id={styles.set}>

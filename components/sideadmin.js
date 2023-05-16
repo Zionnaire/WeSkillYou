@@ -32,8 +32,8 @@ export default function Adminside(){
           <div className={styles.dash}>
          <Link href="/"> <h5 id={styles.dashbtn}><AiFillHome/>Home</h5></Link>
          <h5><MdOutlineDashboardCustomize/> Dashboard</h5>
-           <Link href="/topsearches"><h5 id={styles.dashbtn}> <RxDashboard/>Courses</h5></Link>
-           <h5><Link href="/favourite"><AiOutlineHeart/> Favourite</Link></h5>
+           <Link href="/mytopsearches"><h5 id={styles.dashbtn}> <RxDashboard/>Courses</h5></Link>
+           <h5><Link href="/favourites"><AiOutlineHeart/> Favourite</Link></h5>
            <h5><MdOutlineNotificationsNone/>Notifications</h5>
             <h6><Link href="/settings"><AiTwotoneSetting/> Settings</Link></h6>
             <div className={styles.premium}>
