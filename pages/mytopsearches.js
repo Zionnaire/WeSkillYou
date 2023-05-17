@@ -32,7 +32,7 @@ export default function TopSearches() {
                     <div className={styles.TopSearchesRow}>
                       <h4>Top Searches</h4>
                       <div className={styles.filter}>
-                       <Link href="/filters"> <GoSettings /></Link>
+                       <Link href="/realfilters"> <GoSettings /></Link>
                       </div>
                     </div>
                     <div className={styles.flexBox}>

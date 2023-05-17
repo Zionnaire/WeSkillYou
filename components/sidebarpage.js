@@ -35,11 +35,11 @@ export default function SideBar(){
           <div className={styles.dash}>
          <Link href="/dashboard"> <button id={styles.dashbtn}><AiFillHome/>HOME</button></Link>
            <Link href="/mytopsearches"><button id={styles.dashbtn}> <BsPlayFill/>GALLERY</button></Link>
-           <h5><Link href="/favourites"><AiOutlineHeart/> FAVOURITES</Link></h5>
-            <h5><AiOutlineSearch/> SEARCH</h5>
-            <h6><Link href="/settings"><AiTwotoneSetting/> SETTINGS</Link></h6>
+           <h5><Link href="/favourites"><button  id={styles.dashbtn}><AiOutlineHeart/> FAVOURITES</button></Link></h5>
+            <h5><button  id={styles.dashbtn}><AiOutlineSearch/> SEARCH</button></h5>
+            <h6><Link href="/settings"><button  id={styles.dashbtn}><AiTwotoneSetting/> SETTINGS</button></Link></h6>
             <div id={styles.set}>
-            <h6><MdOutlineLiveHelp/><Link href="/help">HELP</Link></h6>
+            <h6><button  id={styles.dashbtn}><MdOutlineLiveHelp/><Link href="/helps">HELP</Link></button></h6>
             <h6><SlLogout/> LOG OUT</h6>
             </div>
           </div>
@@ -60,13 +60,13 @@ export default function SideBar(){
             <h6>johndoe@gmail.com</h6>
           </div>
           <div className={styles.dash}>
-           <button id={styles.dashbtn}><AiFillHome/> HOME</button>
-            <h5><BsPlayFill/> GALLERY</h5>
-            <h5><AiOutlineHeart/> FAVOURITES</h5>
-            <h5><AiOutlineSearch/> SEARCH</h5>
-            <h5><AiTwotoneSetting/> SETTINGS</h5>
+          <Link href="/dashboard"> <button id={styles.dashbtn}><AiFillHome/>HOME</button></Link>
+           <Link href="/mytopsearches"><button id={styles.dashbtn}> <BsPlayFill/>GALLERY</button></Link>
+           <h5><Link href="/favourites"><button  id={styles.dashbtn}><AiOutlineHeart/> FAVOURITES</button></Link></h5>
+            <h5><button  id={styles.dashbtn}><AiOutlineSearch/> SEARCH</button></h5>
+            <h6><Link href="/settings"><button  id={styles.dashbtn}><AiTwotoneSetting/> SETTINGS</button></Link></h6>
             <div id={styles.set}>
-            <h6><MdOutlineLiveHelp/> HELP</h6>
+            <h6><button  id={styles.dashbtn}><MdOutlineLiveHelp/><Link href="/helps">HELP</Link></button></h6>
             <h6><SlLogout/> LOG OUT</h6>
             </div>
           </div>

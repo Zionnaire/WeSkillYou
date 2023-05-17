@@ -5,12 +5,14 @@ import styles from '../styles/favouritepage.module.css'
 import Link from 'next/link'
 import NavBar from '../components/head'
 import { Container } from 'react-bootstrap'
+import SideBar from '@/components/sidebarpage'
 
 
 export default function Favourite() {
   return (
     <>
-	<NavBar />
+	{/* <NavBar /> */}
+	<SideBar />
 		<Container>
 		
 		<div className={styles.FavouriteBig}>

@@ -18,16 +18,16 @@ export default function Login() {
 		let req = {
 		  uName:username,
 		  password:password,
-		  role: role
+		  roles: role
 		}
-		console.log(role);
+		console.log(req);
 		let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/login', req)
-	
-		 if(role === "student"){
+		console.log(response.data)
+		 if(response.data.user.role=== "student"){
 			toast(response.data.message)
 			Router.push('/dashboard')
 		}
-		else if(role === "tutor"){
+		else if(response.data.user.role === "tutor"){
 			toast(response.data.message)
 			Router.push('/tutorpage')
 		}

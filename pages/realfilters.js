@@ -13,7 +13,7 @@ export default function Filters() {
         <section className={styles.sect1}>
             <div className={styles.sect2}>
                 <div className={styles.sect3}> 
-               <div id={styles.left}><Link href="/topsearches"><BsArrow90DegLeft/></Link></div>
+               <div id={styles.left}><Link href="/mytopsearches"><BsArrow90DegLeft/></Link></div>
                <div className={styles.filt}>
                <h5>Sort by</h5>
                <div className={styles.filterInput}>
