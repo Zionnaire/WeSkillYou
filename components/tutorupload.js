@@ -22,6 +22,7 @@ export default function TutorUploads() {
   }, []);
 
   const[video, setVideo] = useState()
+  const[image, setImage] = useState('')
   const [price, setPrice] = useState('')
   const [title, setTitle] = useState('')
   const [desc, setDesc] = useState('')
@@ -37,6 +38,7 @@ export default function TutorUploads() {
         formData.append('title',title)
         formData.append('desc', desc)
         formData.append('link', link)
+        formData.append('image', image)
       const res = await axios.post("",formData);
       console.log(res);
     } catch (error) {
@@ -49,11 +51,12 @@ export default function TutorUploads() {
         <div className={styles.res2}>
           <div className={styles.res3}>
             <h1>Chicken Republic</h1>
-              <input className={styles.res3img} type="file" placeholder="Upload image" onChange={e =>setVideo(e.target.files[0])}/>
+              <input className={styles.res3img} type="file" placeholder="Upload video" onChange={e =>setVideo(e.target.files[0])}/>
+              <input className={styles.res3img} type="file" placeholder="Upload image" onChange={e =>setImage(e.target.files[0])}/>
               <input className={styles.res3text} type="number" placeholder="Input Price Here" onChange={e =>setPrice(e.target.value)}/>
               <input className={styles.res3text} type="text" placeholder="Input Title Here" onChange={e =>setTitle(e.target.value)}/>
               <input className={styles.res3text} type="text" placeholder="Input Description Here" onChange={e =>setDesc(e.target.value)}/>
-              <input className={styles.res3text} type="text" placeholder="Input Description Here" onChange={e =>setLink(e.target.value)}/>
+              <input className={styles.res3text} type="text" placeholder="Input Link Here" onChange={e =>setLink(e.target.value)}/>
 
               <button className={styles.res3btn} onClick={handleSubmit}>Submit</button>
               <h1 className={styles.status} >Available:</h1>

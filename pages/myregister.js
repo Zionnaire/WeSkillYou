@@ -19,15 +19,16 @@ let handleRegister = async() =>{
 		email : email,
 		password : password,
 		cPassword : cPassword,
-		role:role
+		roles:role
 	}
+	console.log(request)
 	let response = await axios.post('https://we-skill.vercel.app/api/v1/auth/register', request)
 	// console.log(response);
 	toast(response.data.message)
-	if(role === "Student"){
+	if(role === "student"){
 		Router.push("/mylogin")
 	}
-	else if(role === "Tutor"){
+	else if(role === "tutor"){
 		Router.push("/tutorpage")
 	}
 	else {
@@ -78,8 +79,9 @@ let handleRegister = async() =>{
 							<select value={role} onChange={(e) => {
           setRole(e.target.value);}}>
 								
-									<option value={role._id}>Student</option>
-									<option value={role._id}>Tutor</option>
+									<option value="student">Student</option>
+									<option value="tutor">Tutor</option>
+									<option value="Admin">Admin</option>
 									
 							
 								
