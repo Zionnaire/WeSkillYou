@@ -724,7 +724,11 @@ color: #71747D;
 .col5{
     width: 15%;
 }
-@media only screen and (max-width:780px) {
+
+
+
+
+@media only screen and (max-width:760px) {
     #calendar{
         display: none;
     }
@@ -775,6 +779,8 @@ color: #71747D;
         letter-spacing: 0.012em;
         margin: 0;
     }
+
+
     
 }
 @media only screen and (max-width: 550px) {

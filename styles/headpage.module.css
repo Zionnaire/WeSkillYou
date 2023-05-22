@@ -43,6 +43,10 @@
     /* padding-bottom: 20px; */
 }
 
+.dflex .form-control{
+  padding: 0 0.3rem !important;
+}
+
 
 
 .navs{
@@ -68,6 +72,7 @@
 .dflex{
   display: flex !important;
 }
+
   .btn{
     font-family: 'Inter';
 font-style: normal;
@@ -84,6 +89,15 @@ border: 1px solid #ffff;
     width: 40%;
 }  
 
+}
+
+@media screen and (max-width: 760px) {
+  .navLink {
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-start; */
+  
+}
 }
 
 

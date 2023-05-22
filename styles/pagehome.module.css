@@ -1,7 +1,7 @@
 .sect1{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   padding: 30px 0;
 }
@@ -635,9 +635,25 @@ padding: 15px;
   font-size: 18px;
 }
 
+.me-2{
+  padding: 0 0.3rem !important;
+}
+
 /* Media Query Starts Here*/
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px){
+  .sect2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    gap: 20px;
+}
+}
+
+@media screen and (min-width: 770px) {
   .SubSect2 h1{
       
       font-size: 48px;
@@ -710,12 +726,14 @@ padding: 15px;
          
           font-size: 30px;
           line-height: 48px;
+          width: 80%;
         
       }
       
       .test3 h3{
       font-size: 22px;
       line-height: 29px;
+      width: 80%;
     
       }
 
@@ -767,7 +785,7 @@ line-height: 38px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
       width: 100%;
       padding: 20px 0;
   }
@@ -919,11 +937,15 @@ line-height: 38px;
 
 }
 
+
+
 @media screen and (min-width: 900px) {
 
   .SubSect2{
       display: flex;
       padding: 20px 0;
+      justify-content: flex-start;
+      align-items: flex-start;
   }
  .SubSect2 h1{
       font-size: 48px;

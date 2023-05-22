@@ -61,6 +61,7 @@ function NavBar() {
                     >
                     <NavDropdown.Item >
                       Public Speaking
+                      <NavDropdown.Divider />
                       <NavDropdown.Item >
                       Leadership Skill
                     </NavDropdown.Item>

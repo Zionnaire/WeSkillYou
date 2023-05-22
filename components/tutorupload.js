@@ -1,80 +1,194 @@
-
-import React, { useEffect, useState } from "react";
-// import { CartContext } from "../context/cartContext";
-// import { useContext } from "react";
-import axios from "axios";
-import styles from "../styles/mytutor.module.css"
-// import { createLocation } from '@remix-run/router/dist/history'
+import React, { useState , useEffect} from "react";
+import axios from "../utils/Axios";
+import styles from "../styles/mytutor.module.css";
+import { Content } from "next/font/google";
+import { headers } from "@/next.config";
+import LazyImage from '../components/lazyımage';
 
 export default function TutorUploads() {
-  const [courseItems, setCourseItems] = useState([]);
-  const getAllCourses = async () => {
+  const [base64String, setBase64String] = useState("");
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [price, setPrice] = useState("");
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+  const [videoLink, setVideoLink] = useState("");
+const [token, setToken] = useState("")
+
+  
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      const base64 = reader.result.split(",")[1];
+      setBase64String(base64);
+    };
+
+    reader.readAsDataURL(file);
+  };
+
+  const handleImageUpload = async (event) => {
+    const file = event.target.files[0];
+    const imageUrl = URL.createObjectURL(file);
+
+    setSelectedImage(imageUrl);
+
     try {
-      const res = await axios.get("");
-      setCourseItems(res.data.data);
+      const response = await fetch(imageUrl);
+      const blob = await response.blob();
+
+      const image = new Image();
+      image.onload = () => {
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+
+        // Calculate the desired dimensions for size reduction
+        const maxWidth = 480;
+        const maxHeight = 280;
+        let width = image.width;
+        let height = image.height;
+
+        if (width > maxWidth || height > maxHeight) {
+          if (width / maxWidth > height / maxHeight) {
+            height *= maxWidth / width;
+            width = maxWidth;
+          } else {
+            width *= maxHeight / height;
+            height = maxHeight;
+          }
+        }
+
+        canvas.width = width;
+        canvas.height = height;
+
+        context.drawImage(image, 0, 0, width, height);
+        const resizedBase64String = canvas.toDataURL();
+
+        setBase64String(resizedBase64String);
+      };
+
+      image.src = imageUrl;
     } catch (error) {
-      console.log(error.message);
+      console.log("Error:", error);
     }
   };
 
-  useEffect(() => {
-    getAllCourses();
-  }, []);
+  const handleSubmit = async () => {
+    const req = {
+      courseVid: base64String,
+      thumbNail: base64String,
+      price: price,
+      title: title,
+      descrip: desc,
+      videoLink: videoLink,
+    };
 
-  const[video, setVideo] = useState()
-  const[image, setImage] = useState('')
-  const [price, setPrice] = useState('')
-  const [title, setTitle] = useState('')
-  const [desc, setDesc] = useState('')
-  const [link, setLink] = useState('')
-  
-
-  let handleSubmit = async() =>{
-    
     try {
-        const formData = new FormData()
-        formData.append('video',video)
-        formData.append('price',price)
-        formData.append('title',title)
-        formData.append('desc', desc)
-        formData.append('link', link)
-        formData.append('image', image)
-      const res = await axios.post("",formData);
+      const res = await axios.post(
+        "video/createVideo",
+        req, {
+          headers: {
+          "Authorization": `Bearer ${token}`,
+          "Content-Type": "application/json"
+        }}
+      );
+      // Handle the response
       console.log(res);
     } catch (error) {
-      console.log(error.message);
+      
     }
-  }
+  };
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    let token =localStorage.getItem("token")
+    console.log(token);
+    const fetchData = async () => {
+      try {
+        console.log(token)
+        const response = await axios.get("video/", {
+          headers: {
+            "Authorization": `Bearer ${token}`,
+            "Content-Type": "application/json"
+          }
+        })
+        console.log(response);
+        setData(response.data.videos);
+      } catch (error) {
+        console.log(error.message);
+      }
+    };
+
+    fetchData(data);
+  }, []);
+
   return (
     <>
       <section className={styles.res1}>
         <div className={styles.res2}>
           <div className={styles.res3}>
-            <h1>Chicken Republic</h1>
-              <input className={styles.res3img} type="file" placeholder="Upload video" onChange={e =>setVideo(e.target.files[0])}/>
-              <input className={styles.res3img} type="file" placeholder="Upload image" onChange={e =>setImage(e.target.files[0])}/>
-              <input className={styles.res3text} type="number" placeholder="Input Price Here" onChange={e =>setPrice(e.target.value)}/>
-              <input className={styles.res3text} type="text" placeholder="Input Title Here" onChange={e =>setTitle(e.target.value)}/>
-              <input className={styles.res3text} type="text" placeholder="Input Description Here" onChange={e =>setDesc(e.target.value)}/>
-              <input className={styles.res3text} type="text" placeholder="Input Link Here" onChange={e =>setLink(e.target.value)}/>
-
-              <button className={styles.res3btn} onClick={handleSubmit}>Submit</button>
-              <h1 className={styles.status} >Available:</h1>
-               
+            <h1>RoyalDee Catering</h1>
+            <h2>Upload Video:</h2>
+            <input
+              className={styles.res3img}
+              type="file"
+              accept="video/*"
+              onChange={handleFileChange}
+            />
+            {base64String && (
+              <video controls>
+                <source
+                  src={`data:video/mp4;base64,${base64String}`}
+                  type="video/mp4"
+                />
+              </video>
+            )}
+            <h2>Upload Thumbnail:</h2>
+          
+            <input
+             type="file"
+             accept="image/*"
+             onChange={handleImageUpload}
+           />
+           {selectedImage && <img src={selectedImage} alt="Selected" />}
+            <h2>Registration Fee:</h2>
+            <input
+              className={styles.res3text}
+              type="number"
+              placeholder="Input Price Here"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+            />
+            <h2>Upload Title:</h2>
+            <input
+              className={styles.res3text}
+              type="text"
+              placeholder="Input Title Here"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+            <h2>Upload Description:</h2>
+            <input
+              className={styles.res3text}
+              type="text"
+              placeholder="Input Description Here"
+              value={desc}
+              onChange={(e) => setDesc(e.target.value)}
+            />
+            <h2>YouTube Link:</h2>
+            <input
+              className={styles.res3text}
+              type="text"
+              placeholder="Input Link Here"
+              value={videoLink}
+              onChange={(e) => setVideoLink(e.target.value)}
+            />
+            <button className={styles.res3btn} onClick={handleSubmit}>
+              Submit
+            </button>
+            <h1 className={styles.status}>Available:</h1>
             <hr />
-            {/* {courseItems.map((course, index) => (
-              <div key={index} className={styles.res4}>
-                <img className={styles.res4img} src={course.video} />
-             
-                <div className={styles.res4cont}>
-                  <h1>{course.title}</h1>
-                  <h2> {course.desc}</h2>
-                  <h3>
-                    {course.price}{" "}
-                  </h3>
-                </div>
-              </div>
-            ))} */}
           </div>
         </div>
       </section>
