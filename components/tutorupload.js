@@ -3,7 +3,7 @@ import axios from "../utils/Axios";
 import styles from "../styles/mytutor.module.css";
 import { Content } from "next/font/google";
 import { headers } from "@/next.config";
-import LazyImage from '../components/lazyımage';
+
 
 export default function TutorUploads() {
   const [base64String, setBase64String] = useState("");

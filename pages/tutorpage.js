@@ -1,7 +1,6 @@
 
 import React from "react";
 import styles from '../styles/admindashpage.module.css'
-import NavBar from "../components/head";
 import TutorUploads from "@/components/tutorupload";
 import SideBar from "@/components/sidebarpage";
 // import NewNavbar from "@/components/newsidebar";
